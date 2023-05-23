@@ -13,8 +13,8 @@ st.markdown("* Se nos consulto para poder analisar la data de los Flujos Migrato
 
 st.markdown("* OBJETIVOS : ")
 
-st.markdown("* Conocer la procedencia y destino de los migrantes de Latinoamérica.")
-st.markdown("* Analizar la procedencia de los migrantes en Estados Unidos para identificar patrones y tendencias de migración.")
+#st.markdown("* Conocer la procedencia y destino de los migrantes de Latinoamérica.")
+#st.markdown("* Analizar la procedencia de los migrantes en Estados Unidos para identificar patrones y tendencias de migración.")
 st.markdown("* Caracterizar los factores demográficos de los migrantes en Estados Unidos.")
 st.markdown("* Identificar las principales razones por las cuales las personas migran de un país a otro.")
 st.markdown("* Analizar la situación económica de los migrantes para comprender como la migración afecta la economía del país de origen y destino.")
