@@ -4,7 +4,7 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="centered")
 
 st.image('./images/logotransparente.png', width=230)
-st.image('./images/main.png')
+st.image('./images/principal.jpg')
 
 
 st.markdown("### Analisis profundo de los Flujos Migratorios")
