@@ -102,7 +102,7 @@ st.set_page_config(layout="centered")
 
 active = None 
 
-st.title(f"Prediccion de Migracion Neta en Pais")
+st.title(f"Prediccion de Migracion Neta del Pais")
 
 st.markdown("## **Modelos de Machine Learning**")
 
