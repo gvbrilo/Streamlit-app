@@ -1,9 +1,5 @@
 import os
 
-from stqdm import stqdm
-
-from time import sleep
-
 import numpy as np
 
 import streamlit as st
