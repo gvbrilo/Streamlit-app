@@ -101,7 +101,7 @@ st.set_page_config(layout="centered")
 
 active = None 
 
-st.title(f"Prediccion Tasa de Desempleo Pais")
+st.title(f"Prediccion Tasa de Desempleo del Pais")
 
 st.markdown("## **Modelos de Machine Learning**")
 
