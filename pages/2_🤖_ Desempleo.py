@@ -101,7 +101,7 @@ st.set_page_config(layout="centered")
 
 active = None 
 
-st.title(f"Prediccion de Migracion Neta en Pais")
+st.title(f"Prediccion Tasa de  Pais")
 
 st.markdown("## **Modelos de Machine Learning**")
 
@@ -119,7 +119,7 @@ if option :
 
     st.write(f"Seleccionaste {country}")
 
-    año_predecir = st.slider("Migracion Neta - Predicion", min_value=2022, max_value=2030, value=2025)
+    año_predecir = st.slider("Tasa de desempleo - Predicion", min_value=2022, max_value=2030, value=2025)
 
     df_selected = dict_datasets[f'{country}']
 
@@ -144,8 +144,6 @@ if option :
 
             pred1=modelo1.predict(start=start,end=end,typ='levels').rename('ARIMA Predictions')
 
-            print(f'Predicciones para los proximos {año_predecir} años: ',pred)
-
             st.write(f'Predicciones para los proximos {año_predecir} años: ',pred)
 
             figure1 = plt.figure(figsize=(12,5), dpi=100)
@@ -156,7 +154,7 @@ if option :
 
             plt.plot(pred, label='forecast')
 
-            plt.title(f"Prediccion de Migracion Neta en {country} Comp - Test")
+            plt.title(f"Prediccion de la Tasa de desempleo en {country} Comp - Test")
 
             plt.legend(loc='upper left', fontsize=8)
 
@@ -170,7 +168,7 @@ if option :
 
             plt.plot(pred, label='forecast')
 
-            plt.title(f"Prediccion de Migracion Neta en {country} Final")
+            plt.title(f"Prediccion de Tasa de desempleo en {country} Final")
 
             plt.legend(loc='upper left', fontsize=8)
 
@@ -178,16 +176,16 @@ if option :
 
             st.write(figure2)
 
-            st.write(f"La migración neta para el año {año_predecir} es de {pred[-1]}")
+            st.write(f"La Tasa de desempleo para el año {año_predecir} es de {pred[-1]}")
 
         else:
-            st.write("Model is not trained. Please Press the 'Predict Button'.")
+            st.write("El modelo no está entrenado. Seleccione un país y entrene primero el modelo.")
 
     else:
-        st.write("Model is not trained. Please select a Year and train the model first.")
+        st.write("El modelo no está entrenado. Seleccione un país y entrene primero el modelo.")
         
 else:
-        st.write("Model is not trained. Please select a country and train the model first.")
+        st.write("El modelo no está entrenado. Seleccione un país y entrene primero el modelo.")
 
 
 # cd PI_Grupal_09_main/PF-Migracion/Semana_4/Streamlit
