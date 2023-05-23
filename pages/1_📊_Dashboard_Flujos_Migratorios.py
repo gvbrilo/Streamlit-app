@@ -33,6 +33,6 @@ components.html("""
 """)
 
 #Embeber dashboard
-components.iframe("https://app.powerbi.com/reportEmbed?reportId=3e87ef0a-e7af-4820-834b-3ae6f985da8f&autoAuth=true&ctid=c9553b71-e9f5-4264-9080-f30bc2ddf506 ", 
+components.iframe("https://app.powerbi.com/reportEmbed?reportId=581a568a-031e-4a5f-ac3b-855c0745e528&autoAuth=true&ctid=c9553b71-e9f5-4264-9080-f30bc2ddf506 ", 
                   width=1300, height=2850, scrolling=False)
 
